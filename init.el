@@ -33,6 +33,7 @@ re-downloaded in order to locate PACKAGE."
 (require 'init-markdown)
 (require 'init-misc)
 
-;; default theme, also check out zenburn
+;; default theme
 (require-package 'color-theme-solarized)
+(require-package 'zenburn-theme) ;;second favorite
 (load-theme 'solarized-dark t)
