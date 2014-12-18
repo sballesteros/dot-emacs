@@ -25,4 +25,6 @@
 
 (setq frame-title-format '(buffer-file-name "Emacs: %b (%f)" "Emacs: %b"))
 
+(add-to-list 'auto-mode-alist '("\\.ejs$" . html-mode))
+
 (provide 'init-misc)
