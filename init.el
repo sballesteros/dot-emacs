@@ -36,4 +36,4 @@ re-downloaded in order to locate PACKAGE."
 ;; default theme
 (require-package 'color-theme-solarized)
 (require-package 'zenburn-theme) ;;second favorite
-(load-theme 'solarized-dark t)
+(load-theme 'zenburn t)

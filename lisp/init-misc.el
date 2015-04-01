@@ -27,4 +27,11 @@
 
 (add-to-list 'auto-mode-alist '("\\.ejs$" . html-mode))
 
+
+(defun my-multi-occur-in-matching-buffers (regexp &optional allbufs)
+  "Show all lines matching REGEXP in all buffers."
+  (interactive (occur-read-primary-args))
+  (multi-occur-in-matching-buffers ".*" regexp))
+(global-set-key (kbd "M-s /") 'my-multi-occur-in-matching-buffers)
+
 (provide 'init-misc)
