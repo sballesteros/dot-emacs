@@ -25,7 +25,7 @@
 
 (setq frame-title-format '(buffer-file-name "Emacs: %b (%f)" "Emacs: %b"))
 
-(add-to-list 'auto-mode-alist '("\\.ejs$" . html-mode))
+;;(add-to-list 'auto-mode-alist '("\\.ejs$" . html-mode))
 
 
 (defun my-multi-occur-in-matching-buffers (regexp &optional allbufs)

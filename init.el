@@ -29,7 +29,8 @@ re-downloaded in order to locate PACKAGE."
 (require 'init-osx-keys)
 (require 'init-flyspell)
 (require 'init-css)
-(require 'init-javascript)
+;;(require 'init-javascript)
+(require 'init-web-mode)
 (require 'init-markdown)
 (require 'init-misc)
 
