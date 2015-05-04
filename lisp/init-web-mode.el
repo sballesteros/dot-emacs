@@ -2,6 +2,8 @@
 (require-package 'web-mode)
 (add-to-list 'auto-mode-alist '("\\.ejs\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.js?\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.json?\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.jsonld?\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.html?\\'" . web-mode))
 
 ;;apply jsx mode to js files
