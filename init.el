@@ -34,6 +34,8 @@ re-downloaded in order to locate PACKAGE."
 (require 'init-markdown)
 (require 'init-misc)
 
+(require 'ess-site)
+
 ;; default theme
 (require-package 'color-theme-solarized)
 (require-package 'zenburn-theme) ;;second favorite
