@@ -32,6 +32,7 @@ re-downloaded in order to locate PACKAGE."
 ;;(require 'init-javascript)
 (require 'init-web-mode)
 (require 'init-markdown)
+(require 'init-yaml)
 (require 'init-misc)
 
 (require 'ess-site)
