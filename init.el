@@ -32,9 +32,16 @@ re-downloaded in order to locate PACKAGE."
 ;;(require 'init-javascript)
 (require 'init-web-mode)
 (require 'init-markdown)
+(require 'init-yaml)
 (require 'init-misc)
 
-(require 'ess-site)
+;; http://stuff-things.net/2015/10/05/emacs-visible-bell-work-around-on-os-x-el-capitan/
+(setq visible-bell nil)
+(setq ring-bell-function (lambda ()
+(invert-face 'mode-line)
+(run-with-timer 0.1 nil 'invert-face 'mode-line)))
+
+;;(require 'ess-site)
 
 ;; default theme
 (require-package 'color-theme-solarized)

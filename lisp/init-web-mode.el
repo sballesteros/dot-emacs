@@ -6,6 +6,9 @@
 (add-to-list 'auto-mode-alist '("\\.jsonld?\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.html?\\'" . web-mode))
 
+;; disable smart quote
+(setq web-mode-enable-auto-quoting nil)
+
 ;;apply jsx mode to js files
 (setq web-mode-content-types-alist
   '(("jsx" . "\\.js\\'")))
