@@ -1,10 +1,10 @@
 ;;js2-mode
-(require-package 'js2-mode)
+;;(require-package 'js2-mode)
 
-(add-hook 'js-mode-hook
-          (lambda ()
-            (require 'js2-mode)
-            (setq indent-line-function 'js2-indent-line)))
+;;(add-hook 'js-mode-hook
+;;          (lambda ()
+;;            (require 'js2-mode)
+;;            (setq indent-line-function 'js2-indent-line)))
 
 ;;I find js2-mode too slow to be turned on by default
 ;;(add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
@@ -17,8 +17,6 @@
 (setq js2-mode-show-strict-warnings nil)
 (setq js2-strict-inconsistent-return-warning nil)
 (setq js2-include-node-externs t)
-;;couchDB
-(setq js2-additional-externs '("require" "respond" "getRow" "emit" "send" "start" "sum" "log" "provides"))
 
 (setq js-indent-level 2)
 (setq-default js2-basic-indent 2)
