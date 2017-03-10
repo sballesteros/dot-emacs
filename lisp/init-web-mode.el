@@ -34,6 +34,9 @@
 ;; http://www.flycheck.org/manual/latest/index.html
 (require 'flycheck)
 
+;; no delay to show error in minibuffer
+(setq flycheck-display-errors-delay 0)
+
 ;; turn on flychecking globally
 (add-hook 'after-init-hook #'global-flycheck-mode)
 
