@@ -56,8 +56,10 @@ re-downloaded in order to locate PACKAGE."
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(fill-column 80)
  '(prettier-args (quote ("--single-quote")))
  '(prettier-target-mode "web-mode")
+ '(prettier-width-mode (quote fill))
  '(safe-local-variable-values
    (quote
     ((eval progn
