@@ -1,5 +1,3 @@
-(setenv "PATH" (concat (getenv "PATH") ":/usr/local/bin"))
-(setq exec-path (append exec-path '("/usr/local/bin")))
 (add-to-list 'load-path (expand-file-name "lisp" user-emacs-directory))
 
 (setq package-archives '(
@@ -24,7 +22,8 @@ re-downloaded in order to locate PACKAGE."
         (package-refresh-contents)
         (require-package package min-version t)))))
 
-(require-package 'better-defaults)
+(require 'better-defaults)
+(require 'init-misc)
 
 (require 'init-osx-keys)
 (require 'init-flyspell)
@@ -33,7 +32,6 @@ re-downloaded in order to locate PACKAGE."
 (require 'init-web-mode)
 (require 'init-markdown)
 (require 'init-yaml)
-(require 'init-misc)
 (require 'prettier-js)
 (add-hook 'web-mode-hook
           (lambda ()
@@ -48,15 +46,18 @@ re-downloaded in order to locate PACKAGE."
 ;;(require 'ess-site)
 
 ;; default theme
-(require-package 'color-theme-solarized)
 (require-package 'zenburn-theme) ;;second favorite
 (load-theme 'zenburn t)
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(fill-column 80)
+ '(package-selected-packages
+   (quote
+    (zenburn-theme yaml-mode markdown-mode flycheck web-mode json-mode exec-path-from-shell better-defaults)))
  '(prettier-args (quote ("--single-quote")))
  '(prettier-target-mode "web-mode")
  '(prettier-width-mode (quote fill))
